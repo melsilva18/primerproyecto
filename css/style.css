@@ -1,0 +1,135 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */ }
+
+/*Variables de colores*/
+.titulo__principal {
+  color: red; }
+
+.blue {
+  color: blue; }
+
+.green {
+  color: green; }
+
+.red {
+  color: red; }
+
+.paraNos {
+  color: white; }
+
+/*Variables de fuente*/
+.titulo__principal {
+  font-family: "arial";
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center; }
+
+.textoNos__parrafo {
+  text-align: justify; }
+
+.frase__parrafo {
+  font-weight: bold;
+  font-family: "tahoma"; }
+
+.interlineado__parrafo {
+  line-height: 2; }
+  @media only screen and (max-width: 768px) {
+    .interlineado__parrafo {
+      line-height: none; } }
+
+/*map-get*/
+.prod {
+  background-color: dark;
+  text-align: center;
+  font-size: 30px;
+  color: dark; }
+
+/*tamaño titulo*/
+@media only screen and (max-width: 768px) {
+  .titulo__principal {
+    font-size: 30px; } }
+
+@media only screen and (max-width: 768px) {
+  .descripcion__principal {
+    font-size: 20px; } }
+
+@media only screen and (max-width: 768px) {
+  .redes__principal {
+    font-size: 0.7rem; } }
+
+/*Variables de tamaño*/
+.logo {
+  width: 80px; }
+
+.paddingNos__parrafo {
+  padding: 30px; }
+
+.paddingFrase__parrafo {
+  padding: 40px; }
+
+.foto {
+  width: 100px; }
+
+.tamañoFoto {
+  width: 100%; }
+
+.btn, .btn--enviar, .btn--limpiar {
+  width: 100px;
+  height: 50px;
+  border: 1px solid white;
+  color: white;
+  background-color: #99A3A4;
+  text-align: center;
+  display: flex;
+  flex-direction: row; }
+
+.btn--enviar {
+  background-color: #BFC9CA;
+  color: white; }
+
+.btn--limpiar {
+  background-color: #BFC9CA;
+  color: white; }
+
+body {
+  background: #e2edee; }
+
+footer {
+  background: lightblue;
+  margin-bottom: 0;
+  height: auto; }
+
+.parallax {
+  background-image: url("../assets/img/foto.jpg");
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 30 px;
+  margin-bottom: 50px; }
+
+@media only screen and (max-width: 768px) {
+  .parallax {
+    display: none; } }
+
+.inter {
+  line-height: 3; }
+
+@media only screen and (max-width: 768px) {
+  .inter {
+    line-height: none; } }
+
+.nav {
+  display: flex;
+  flex-direction: row; }
+
+@media only screen and (max-width: 768px) {
+  .menuAbajo {
+    display: none; } }
+
+a {
+  text-decoration: none; }

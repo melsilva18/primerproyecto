@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+@import "colores";
+@import "fuente";
+@import "tamanos";
+@import "botones";
+
+
+body {
+    background: #e2edee;
+}
+
+
+
+footer {
+    background: lightblue;
+    margin-bottom: 0;
+    height: auto;
+}
+
+.parallax {
+    background-image: url("../assets/img/foto.jpg");
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 30 px;
+    margin-bottom: 50px;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .parallax {
+        display: none;
+    }
+}
+
+.inter {
+    line-height: 3;
+}
+
+@media only screen and (max-width: 768px) {
+    .inter {
+        line-height: none;
+    }
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .menuAbajo {
+        display: none;
+    }
+
+
+}
+
+a {
+    text-decoration: none;
+}

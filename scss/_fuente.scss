@@ -1,0 +1,106 @@
+/*Variables de fuente*/
+
+$mayuscula:uppercase;
+$fontFamily:'arial';
+$textAling:justify;
+
+.titulo {
+    &__principal {
+        font: {
+            family: $fontFamily;
+            weight: bold;
+        }
+
+        text: {
+            transform: $mayuscula;
+            align: center;
+        }
+    }
+
+}
+
+.textoNos {
+    &__parrafo {
+        text: {
+            align: $textAling;
+        }
+    }
+}
+
+.frase {
+    &__parrafo {
+        font: {
+            weight: bold;
+            family: "tahoma";
+        }
+    }
+
+}
+
+.interlineado {
+    &__parrafo {
+        line-height: 2;
+
+        @media only screen and (max-width: 768px) {
+            line-height: none;
+        }
+    }
+}
+
+
+
+/*map-get*/
+
+$estilos: (color: dark,
+centro: center,
+upper: uppercase,
+tFuente: 30px);
+
+.prod {
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    font-size: map-get($estilos, tFuente);
+    color: map-get($estilos, color);
+}
+
+
+/*tamaño titulo*/
+
+@media only screen and (max-width: 768px) {
+    .titulo {
+        &__principal {
+            font: {
+                size: 30px;
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .descripcion {
+        &__principal {
+            font: {
+                size: 20px;
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .redes {
+        &__principal {
+            font: {
+                size: 0.7rem;
+            }
+
+        }
+
+    }
+
+}
